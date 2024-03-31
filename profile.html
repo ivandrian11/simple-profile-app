@@ -4,7 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      p {
+        padding: 0.5rem 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .profile-header {
+        background-color: #4caf50;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+      }
+
+      .profile-header h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      .profile-content {
+        padding: 20px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      .section-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .section-content {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      .company-logo {
+        height: 60px;
+      }
+
+      .tech-stack {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .tech-stack-item {
+        border: #4caf50 1px solid;
+        color: #fff;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        background-color: white;
+        color: #4caf50;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .tech-stack-item img {
+        height: 30px;
+      }
+
+      .entries {
+        list-style: none;
+        padding: 0;
+      }
+
+      .entry {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 30px;
+      }
+
+      .entry::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 8px;
+        width: 4px;
+        height: 100%;
+        background-color: #4caf50;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+      }
+
+      .body {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      .company-image {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      .fadeInUp {
+        animation-name: fadeInUp;
+      }
+
+      /* Image Styles */
+      .profile-image {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        height: 150px;
+      }
+    </style>
   </head>
   <body>
     <div class="container animated fadeInUp">
